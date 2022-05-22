@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header Setion Start */
+header{
+    margin-bottom: 40px;
+}
+#all{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 2px 5px rgb(105, 103, 103);
+    z-index: 1;
+}
+
+header .logo{
+    margin: 15px 20px;
+}
+header .logo a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    letter-spacing: 4px;
+}
+header .logo a:hover{
+    background-color: rgb(180, 181, 182);
+}
+header .nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 16px 12px;
+}
+header .nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+header .nav-bar ul li a:hover{
+    background-color: rgb(180, 181, 182);
+}
+.header-img{
+    position: relative;
+}
+.header-img img{
+    width: 100%;
+}
+.header-img h1{
+    color: rgba(0,0,0,0.6);
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 24px;
+    bottom: 10%;
+}
+/* Header Setion Start */
+
+.all-section{
+    width: 78%;
+    margin: auto
+}
+
+/* About Section Start */
+#about{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#about .text-tag{
+    width: 46%;
+}
+
+#about .img-tag img{
+    width: 520px;
+    opacity: .8;
+    border-radius: 1%;
+}
+
+#about .text-tag h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin: 20px;
+}
+#about .text-tag .p1{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 6px;
+    margin: 45px 0 28px 0;
+}
+#about .text-tag .p2{
+    font-size: 18px;
+    line-height: 1.4;
+}
+#about .text-tag .p3{
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgba(0,0,0,0.7);
+}
+/* About Section End */
+
+/* Our Menu Section Start */
+#menu{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 100px;
+}
+#menu .text-tag h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin: 20px 0 40px 0;
+}
+#menu .text-tag h4{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin: 20px 0 20px 0;
+}
+#menu .text-tag p{
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 40px;
+}
+#menu .img-tag img{
+    opacity: .7;
+    border-radius: 1%;
+}
+/* Our Menu Section End */
+
+/* Contact Section Start */
+#contact{
+    padding: 100px 10px 0 10px;
+}
+#contact h1{
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+#contact .p2{
+    color: #607d8b;
+    font-size: 18px;
+    font-weight: bold;
+}
+#contact input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    font-size: 14px;
+    font-family: serif;
+    margin-top: 12px;
+    padding-left: 5px;
+}
+#contact button{
+    font-size: 15px;
+    font-family: serif;
+    border: none;
+    background: rgb(232, 233, 234);
+    margin: 50px 0 40px 0;
+    padding: 10px;
+}
+#contact button:hover{
+    background-color: rgb(17, 18, 18);
+    color: white;
+}
+/* Contact Section End */
+
+/* Foter Section Start */
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #f2f2f2;
+    margin-top: 70px;
+    position: relative;
+}
+footer p{
+    position: absolute;
+    margin: auto;
+    bottom: 40%;
+    right: 45%;
+}
+/* Foter Section End */
+
+/* Media Section Start */
+@media (max-width: 900px){
+    #about{
+        display: block;
+    }
+    #about .text-tag{
+        width: 100%;
+    }
+    #menu{
+        display: block;
+    }
+}
+@media (max-width: 748px){
+    .all-section{
+        width: 90%;
+    }
+    /* About */
+    #about{
+        display: block;
+    }
+    #about .text-tag{
+        width: 100%;
+    }
+    #about .img-tag img{
+        width: 600px;
+    }
+    /* Mnou */
+    #menu{
+        display: block;
+    }
+}
+@media (max-width: 400px){
+    /* Header */
+    header .logo{
+        margin: 15px 0;
+    }
+    header .nav-bar ul li{
+        display: none;
+    }
+    #about .img-tag img{
+        width: 350px;
+    }
+    
+}
+@media (max-width: 620px){
+    header .nav-bar ul li{
+        display: none;
+    }
+}
+/* Media Section End */
